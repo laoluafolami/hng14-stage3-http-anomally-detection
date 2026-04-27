@@ -1,0 +1,41 @@
+log:
+   path: /var/log/nginx/hng-access.log
+   audit_path: /var/log/detector/audit.log
+   poll_interval_ms: 100
+ 
+window:
+   per_ip_seconds: 60
+   global_seconds: 60
+ 
+baseline:
+   window_minutes: 30
+   recalc_interval_seconds: 60
+   min_samples: 30
+   floor_mean: 1.0
+   floor_stddev: 0.5
+   hourly_slots: 24
+ 
+detection:
+   z_score_threshold: 3.0
+   rate_multiplier: 5.0
+   error_rate_multiplier: 3.0
+   tightened_z_score: 2.0
+ 
+unban:
+   backoff_seconds:
+     - 600
+     - 1800
+     - 7200
+   permanent_after: 3
+ 
+slack:
+   webhook_url:  "https://hooks.slack.com/services/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" 
+   enabled: true
+   timeout_seconds: 5
+ 
+dashboard:
+   host:  "0.0.0.0" 
+   port: 8080
+   refresh_interval_seconds: 3
+   top_ips_count: 10
+
