@@ -14,7 +14,7 @@ A production-grade, real-time anomaly detection system that monitors HTTP traffi
 - **Health Check:** `http://20.9.87.35:8080/health`
 
 
-![alt text](image.png)
+<img width="1900" height="986" alt="image" src="https://github.com/user-attachments/assets/542603ca-2da3-40ce-90ee-ae0d5d9bac6c" />
 > 🔴 **Note:** Dashboard and API are live 24/7.
 
 ## 📖 Blog Post
