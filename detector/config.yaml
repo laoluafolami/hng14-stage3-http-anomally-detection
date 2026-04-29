@@ -29,7 +29,7 @@ unban:
    permanent_after: 3
  
 slack:
-   webhook_url:  "<Redacted for Git" 
+   webhook_url:  "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXX" 
    enabled: true
    timeout_seconds: 5
  
